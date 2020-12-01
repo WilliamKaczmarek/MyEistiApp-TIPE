@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vue.Solde">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Solde"
+            android:textSize="50dp"
+            android:textColor="@color/colorNoir"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="100dp">
+        <!-- Si tu souhaite mettre du texte comme "scannez votre carte"
+             c le TextView juste en dessous
+        Si t'es en deche pour le graphique tu fais un paint avec organisation que
+             tu veux et je te le coderai en xml -->
+        <TextView
+                android:id="@+id/demandeScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chargement..."
+                android:textSize="15dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/sac_dollar"
+            android:paddingBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/montant_Solde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="30dp"
+                android:textColor="@color/colorNoir"
+                />
+
+        <TextView
+            android:id="@+id/lien_GLPI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/link_GLPI"
+            android:textSize="20dp"
+            android:textColor="@color/colorDarkBlue"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

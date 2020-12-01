@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vue.Appel"
+    android:paddingTop="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appel"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/colorNoir"/>
+
+    <LinearLayout
+        android:id="@+id/visibleChoixSlot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginBottom="100dp"
+        >
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:spinnerMode="dialog"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_startAppel"
+            android:text="Commencer"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invisibleNFC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="100dp"
+        >
+
+        <TextView
+            android:id="@+id/infoCreneau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/colorDarkBlue"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/siError"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorNoir"
+            android:text="Veuillez placer votre carte étudiante sur le téléphone."/>
+
+        <TextView
+            android:id="@+id/eleveScan"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dernier élève scanné :"/>
+
+        <ImageView
+            android:id="@+id/imageNFC"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/nfc_logo_red"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_terminerAppel"
+            android:text="Terminer"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:enabled="false"
+            android:background="@drawable/round_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutScrollAppel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <LinearLayout
+                android:id="@+id/scrollAppel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_confirmerAppel"
+            android:text="Confirmer"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:enabled="false"
+            android:background="@drawable/round_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recapAppel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorNoir"
+            android:text="Ce qui aurait été envoyé si nous avions les droits d'un professeur"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/putAbsencesSheet"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:text=""/>
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_retourMenu"
+            android:text="Menu Principale"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:enabled="false"
+            android:background="@drawable/round_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

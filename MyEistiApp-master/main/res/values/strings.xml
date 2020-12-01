@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyEISTI</string>
+    <string name="title_activity_notes">Notes</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="link_GLPI">
+        <a href="https://glpi.eisti.fr/glpi/">Demande de rechargement de crédit</a>
+    </string>
+    <string name="nfc_disabled">NFC non activé, veuillez aller dans les paramètres pour l\'activer</string>
+    <string name="send_mail_dialog">Souhaitez-vous envoyer un email aux élèves absents ?</string>
+
+</resources>

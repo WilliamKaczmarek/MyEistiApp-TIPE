@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".vue.Historique">
+
+    <EditText
+        android:id="@+id/edit_text_result"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:text="Resultat" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edittext">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"/>
+
+        <EditText
+            android:id="@+id/et_envoiRequete"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint=" Entrez l'url"
+            android:inputType="textShortMessage"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </LinearLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_send"
+        android:text="Envoi"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/less_round_button"/>
+</LinearLayout>
